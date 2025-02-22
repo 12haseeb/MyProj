@@ -1,0 +1,537 @@
+body {
+  /*background:linear-gradient(135deg,rgba(30,87,153,0) 0%, rgba(30,87,153,0.8)15%,rgba(30,87,153,1)19%,rgba(30,87,153,1)20%,rgba(41,137,216,1)50%,
+    rgba(30,87,153,1)80%,rgba(30,87,153,1)81%, rgba(30,87,153,0.8)85%,rgba(30,87,153,1)100% );*/
+  /*background: linear-gradient(135deg, #feccb1 0%,#f17432 50%,#ea5507 51%,#fb955e 100%);*/
+  background: linear-gradient(
+    45deg,
+    #959595 0%,
+    #0d0d0d 46%,
+    #010101 50%,
+    #0a0a0a 53%,
+    #4e4e4e 76%,
+    #383838 87%,
+    #1b1b1b 100%
+  );
+  background-size: cover;
+  margin: 0px;
+}
+/**/
+
+#section1 {
+  position: relative;
+}
+
+.header {
+  width: 16vw;
+  height: 17vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.header img {
+  width: 101px;
+  position: fixed;
+  top: 0;
+  left: 100px;
+}
+
+/* NAVIGATION */
+.nav {
+  width: 76.4vw;
+  height: 20.65vh;
+  background-color: transparent;
+  display: block;
+  padding: 0px;
+  margin: 0px;
+  position: fixed;
+  right: 0px;
+  z-index: 1;
+}
+ul {
+  list-style-type: none;
+  width: 75.6%;
+  border-width: 7px;
+  border-color: #adadad;
+  border-style: Outset;
+  padding: 11px;
+  margin: 0px -14px;
+  position: fixed;
+}
+li {
+  display: inline;
+  margin-left: 1.5px;
+}
+.nav a {
+  background-color: transparent;
+  padding: 10px 38px;
+  margin: 13px 1px;
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-family: corbel;
+  font-weight: medium;
+}
+#reg {
+  /*Registration button*/
+  background-color: #ff5e00;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  border: 2.3pt outset #ff5e00;
+}
+#reg:hover {
+  background-color: #ff5e00;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  border: 2.3pt inset #ff5e00;
+}
+.nav a:hover {
+  display: inline-block;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border-bottom-width: 2px;
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-bottom-style: inset;
+  border-right-style: inset;
+  border-left-style: inset;
+  border-right-color: rgba(150, 150, 150, 0.651);
+  border-left-color: rgba(150, 150, 150, 0.651);
+  border-bottom-color: rgba(150, 150, 150, 0.651);
+  /*border: 4px outset green;*/
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-decoration-thickness: 1px;
+  padding: 10px 38px;
+  margin: 13px 1px;
+  font-size: 17px;
+  font-family: corbel;
+  font-weight: bolder;
+}
+/* HOME */
+#Home {
+  display: block;
+  background-image: url("images/home-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 244px;
+  margin: 0px;
+  overflow: hidden;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+#Home h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-top: 135px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 30pt;
+  padding: 0px;
+  margin: 6px;
+}
+#Home span {
+  color: #ff5e00;
+  font-size: 36pt;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+#Home h5 {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  margin-top: -14.822px;
+}
+
+/*ABOUT*/
+#About {
+  border: 3px solid rgb(255, 0, 0);
+  /* background: url('images/about-bg.jpg'); */
+  margin: 2px;
+  padding: 5px 0px;
+  height: 36vh;
+  width: 100%;
+  border: 3px outset #2c2d2f;
+  position: relative;
+}
+#About h1 {
+  color: white;
+  /*text-align: center;*/
+}
+#About h1:hover {
+  margin: 0px;
+  text-align: center;
+  color: #ff5e00;
+}
+#About h2 {
+  color: white;
+}
+#About h2:hover {
+  color: #ff5e00;
+}
+
+#About p {
+  color: rgb(255, 255, 255);
+  text-align: justify;
+}
+#About p {
+  color: rgb(255, 255, 255);
+  text-align: justify;
+}
+#AboutCP {
+  border: 3px ridge rgb(42, 43, 45);
+  background: url("images/about-bg.jpg");
+  /*margin-top: 0.28pt;
+margin-right: -8px;*/
+  margin: 2px;
+  position: absolute;
+  height: 35vh;
+  width: 49.5%;
+  padding: 0px 5px 0px 0px;
+  border-right: 3px outset #2c2d2f;
+  border-top: 3px outset #2c2d2f;
+  border-bottom: 3px outset #2c2d2f;
+}
+/*
+#AboutCP h1:hover{
+margin: 0px;
+text-align: center;
+color: #ff5e00;
+}*/
+#AboutCP h1 {
+  margin: 0px;
+  text-align: center;
+}
+#AboutEvent {
+  border: 3px ridge rgb(42, 43, 45);
+  background: url("images/about-bg.jpg");
+  margin: 2px;
+  right: -0.5%;
+  height: 35vh;
+  width: 49.5%;
+  position: absolute;
+}
+#AboutEvent h1:hover {
+  margin: 0px;
+  text-align: center;
+  color: #ff5e00;
+}
+#AboutEvent h1 {
+  margin: 0px;
+  text-align: center;
+}
+#AboutEvent p {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*      -------------------------  Speakers */
+
+marquee {
+  color: rgb(255, 255, 255);
+  background-color: rgb(42, 43, 45);
+  border-width: 3pt;
+  border-style: inset;
+  border-color: rgb(0, 0, 0);
+}
+#Speakers {
+  color: white;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  margin-top: 0px;
+}
+#speakers h1:hover {
+  color: #ff5e00;
+}
+#Speakers a {
+  color: azure;
+}
+#speakers h1 {
+  background-color: rgb(42, 43, 45);
+  color: white;
+  border-width: 2pt;
+  border-style: ridge;
+  border-color: rgb(0, 0, 0);
+  padding: 0px;
+  margin-left: 0px;
+  margin-top: auto;
+  margin-right: -10px;
+  margin-bottom: 0px;
+  width: 293px;
+}
+#speakers2 {
+  background-color: transparent;
+  margin-left: 0px;
+  margin-top: auto;
+  margin-right: 0px;
+  position: relative;
+}
+.speaker {
+  aspect-ratio: 2/1;
+  width: 20%;
+  margin: 0%;
+  text-align: center;
+}
+.speaker img {
+  width: 60%;
+  margin-left: 10px;
+}
+.speaker h2:hover {
+  color: #ff5e00;
+}
+#saqib {
+  width: 30%;
+}
+
+/* Schedule */
+#Schedule {
+  color: white;
+  text-align: center;
+  margin-left: 0%;
+  background: #2a2b2d;
+  border: 6px groove #505152;
+  background-image: url("images/connectpakcon.png");
+  background-size: contain;
+}
+
+#Schedule h1 {
+  background-color: rgb(42, 43, 45);
+  color: white;
+  border-width: 2pt;
+  border-style: ridge;
+  border-color: rgb(0, 0, 0);
+  padding: 0px;
+  margin: 0px;
+}
+#Schedule h2:hover {
+  color: #ff5e00;
+}
+#Schedule h1:hover {
+  color: #ff5e00;
+}
+.table {
+  text-align: justify;
+  border: 6px outset rgb(128, 128, 128);
+  color: rgb(255, 255, 255);
+  background-color: black;
+  width: 50%;
+  margin-left: 371px;
+}
+.table tr {
+  opacity: 0.7;
+}
+.table tr:hover {
+  background-color: #ff5e00;
+  opacity: 1;
+}
+
+/*Venue*/
+#Venuebg {
+  display: inline-block;
+}
+#Venuebg img {
+  margin-bottom: -24px;
+  padding: 0px;
+  opacity: 0.6;
+  background-image: url("USa lahore2.jpg");
+  border: 4px groove #505152;
+  background-size: cover;
+}
+#Venue {
+  background: linear-gradient(
+    45deg,
+    #959595 0%,
+    #0d0d0d 46%,
+    #010101 50%,
+    #0a0a0a 53%,
+    #4e4e4e 76%,
+    #383838 87%,
+    #1b1b1b 100%
+  );
+  margin: 0px 0px;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  width: 735pt;
+  text-align: center;
+  border: 6px groove #505152;
+}
+#Venue h1:hover {
+  color: #ff5e00;
+}
+
+/*Registration*/
+#Registration {
+  height: 310pt;
+  color: white;
+  border: 5px outset;
+  text-align: center;
+  border-color: #ff5e00;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-family: corbel;
+}
+#Registration h1 {
+  border: 2px outset white;
+  border-radius: 6px;
+  width: 21%;
+  margin-left: 40%;
+  background-color: #000000;
+}
+#Registration h1:hover {
+  background-color: #000;
+  border: 2px inset white;
+  color: #ff5e00;
+}
+#label-for-firstname {
+  font-weight: bolder;
+}
+#firstname {
+  width: 17%;
+  border-radius: 7px;
+  font-weight: bold;
+}
+#label-for-lastname {
+  margin-left: 5px;
+  font-weight: bolder;
+}
+#lastname {
+  width: 17%;
+  border-radius: 7px;
+  font-weight: bold;
+}
+#label_for_mobile {
+  font-weight: bolder;
+}
+#mobile {
+  width: 13%;
+  border-radius: 7px;
+  font-weight: bold;
+}
+#label-for-email {
+  margin-left: 28.5px;
+  font-weight: bolder;
+  font-weight: bold;
+}
+#email {
+  width: 15%;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+#label_for_address {
+  font-weight: bolder;
+}
+#address {
+  width: 42.8%;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+#label_for_Edu {
+  font-weight: bolder;
+}
+#Education {
+  width: 20.6%;
+  border-radius: 7px;
+}
+#Others {
+  width: 21%;
+  border-radius: 7px;
+  font-weight: bold;
+}
+#label-for-status {
+  font-weight: bolder;
+}
+#Currentstatus {
+  width: 10%;
+  border-radius: 7px;
+}
+#Others2 {
+  width: 20%;
+  border-radius: 7px;
+  font-weight: bold;
+}
+#label-for-terms {
+  font-weight: bolder;
+}
+#Registration button {
+  background-color: #ff5e00;
+  width: 10%;
+  height: 25pt;
+  border-radius: 6px;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/*CONTACT*/
+#Contact {
+  color: white;
+  background-color: #2a2b2d;
+  border-bottom: 2px solid #000;
+}
+#Contact h1:hover {
+  color: #ff5e00;
+}
+.contact-span {
+  font-size: 10pt;
+  margin: 0px;
+  letter-spacing: 2px;
+  padding: 8px;
+  background-color: rgb(116, 116, 116);
+  font-weight: bold;
+}
+
+#Contact img {
+  width: 38px;
+  margin: 5px -5px -3px 3px;
+}
+.call-visit {
+  width: 50px;
+}
+#Contact a {
+  text-decoration: none;
+  color: white;
+}
+#Reachout {
+  font-weight: bolder;
+  color: #ff5e00;
+  font-size: large;
+  letter-spacing: 3px;
+  text-decoration: solid;
+  text-decoration: underline;
+}
+
+/*footer*/
+footer {
+  color: white;
+  text-align: center;
+  background-color: #000000;
+}
+#Sociallinks {
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  /*background-color: #b5b6b8;*/
+}
+.facebook img {
+  width: 29px;
+}
+.accounts img {
+  width: 26px;
+}
+.twitter img {
+  width: 30px;
+}
