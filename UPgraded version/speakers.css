@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(
+    to left,
+    #ff5e00 0%,
+    #2a2b2d 13%,
+    #000000 50%,
+    #2a2b2d 87%,
+    #ff5e00 100%
+  );
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Speakers */
+/* Next to main div (.speakers) */
+.container {
+  background-color: transparent;
+  background-image: linear-gradient(120deg, #ff5e006a, rgba(0, 0, 0, 0.2));
+  backdrop-filter: blur(10px);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 0.125fr;
+  row-gap: 20px;
+  margin: 20px 0px;
+  border: 1px solid red;
+  grid-template-areas:
+    "   speaker-iad      speaker-iad-2       speaker-im        speaker-im-2       speaker-sa       speaker-sa-2  "
+    "   .      .       btn        btn       .       . ";
+  position: relative;
+}
+
+/* All the three divs with class .speaker */
+
+.container .speaker {
+  position: relative;
+  z-index: 1;
+  justify-content: center;
+  min-width: 310px;
+  min-height: 330px;
+}
+.speakers > h1 {
+  color: #9e9d9d;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.speakers .speaker-info h1 {
+  color: #ff5e00;
+  text-shadow: 1px -2px 2px #9e9d9d;
+}
+
+.speakers .speaker-info h3 {
+  color: #9e9d9d;
+  /* text-shadow: 1px -2px 3px rgba(255, 255, 255, 0.46); */
+}
+
+/* All of these are of same class .speaker */
+
+/* Imran Ali Dina */
+.container .speaker-iad {
+  grid-area: speaker-iad;
+}
+
+/* image */
+.speaker-iad img, 
+.speaker-im img {
+  object-position: 0px 0px;
+  object-fit: cover;
+  box-shadow: 0px 0px 0px 0px #2a2b2d, 0px 0px 0px 0px #8f8d8d;
+  transition: box-shadow 1s ease;
+  /* width: 312px; */
+  width: 100%;
+  /* height: 326px; */
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* image on hover */
+.speaker-iad:hover img ,
+.speaker-im:hover img ,
+.speaker-sa:hover img{
+  box-shadow: 4px 0px 7px 1px #ff5e00, -4px 0px 7px 1px #8f8d8d;
+}
+
+/* info class for Imran Ali Dina */
+.speaker-iad .speaker-iad-2 ,
+.speaker-im .speaker-im-2 {
+  background-color: transparent;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(0, 0, 0, 0.3)
+  );
+  backdrop-filter: blur(20px);
+  height: calc(100% - 2px);
+  text-align: justify;
+  line-height: 1.3;
+  justify-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  overflow: auto;
+  grid-area: speaker-iad-2;
+  transform: translateX(0); /* Initial position */
+  transition: transform 1s ease; /* Smooth transition */
+}
+/* Transition of info class */
+
+.speaker-iad:hover .speaker-iad-2,
+.speaker-im:hover .speaker-im-2  ,
+.speaker-sa:hover .speaker-sa-2 {
+  transform: translateX(100%);
+}
+
+/* Imran Malik */
+.container .speaker-im {
+  grid-area: speaker-im;
+}
+
+
+/* Saqib Azhar */
+.container .speaker-sa {
+  grid-area: speaker-sa;
+}
+
+/* image */
+.speaker-sa img {
+  object-position: -100px 0px; /*Object position is different than others.*/
+  object-fit: cover;
+  box-shadow: 0px 0px 0px 0px #2a2b2d, 0px 0px 0px 0px #8f8d8d;
+  transition: box-shadow 1s ease;
+  width: 310px;
+  height: 326px;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* info class for Saqib Azhar */
+.speaker-sa .speaker-sa-2 {
+  background-color: transparent;
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(0, 0, 0, 0.3)
+  );
+  backdrop-filter: blur(20px);
+  text-align: justify;
+  height: calc(100% - 8px);
+  line-height: 1.3;
+  justify-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  overflow: auto;
+  grid-area: speaker-sa-2;
+  transform: translateX(0); /* Initial position */
+  transition: transform 1s ease; /* Smooth transition */
+}
+
+
+/* See More Button */
+.container .btn {
+  border: 2px outset #ff5e00;
+  grid-area: btn;
+  align-self: center;
+  justify-self: center;
+  cursor: pointer;
+  border-radius: 40px;
+  box-shadow: 1px 1px 2px #ff5e00;
+  text-shadow: 1px 1px 0px #393939;
+  padding: 10px 40px;
+  margin-bottom: 12px;
+  background: transparent;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0067b8 !important;
+}
+
+.btn i {
+  width: 30px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.btn:hover i {
+  width: 30px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
