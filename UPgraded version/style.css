@@ -338,7 +338,7 @@ ul {
   background: linear-gradient(120deg, rgba(255, 94, 0, 0.326), rgba(42, 43, 45, 0.8));
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(71, 67, 65, 0.8);
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(25px);
 }
 
 .container {
@@ -347,13 +347,13 @@ ul {
   backdrop-filter: blur(28px);
   border-radius: 5px;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr 0.125fr;
   row-gap: 20px;
   margin: 20px 25px;
   grid-template-areas:
-    "   speaker-iad      speaker-iad-2       speaker-im        speaker-im-2       speaker-sa       speaker-sa-2  "
-    "   .      .       btn        btn       .       . ";
+    "   speaker-iad      speaker-iad-2       speaker-im        speaker-im-2 speaker-sa-2       speaker-sa   "
+    "   .      .       btn      btn        .       . ";
   position: relative;
 }
 
@@ -419,7 +419,7 @@ ul {
   left: 0;
 }
 
-/* image on hover of all */
+/* image on hover of Imran Ali Dina and Imran Malik */
 .speaker-iad:hover img ,
 .speaker-im:hover img {
   box-shadow: 4px 0px 7px 1px #ff5e00, -4px 0px 7px 1px #8f8d8d;
@@ -457,7 +457,7 @@ ul {
   transform: translateX(100%);
 }
 
-/* image (Saqib Azhar */
+/* image (Saqib Azhar) */
 .speaker-sa img {
   object-position: -90px 0px; /*Object position is different than others.*/
   object-fit: cover;
@@ -503,7 +503,7 @@ ul {
 }
 
 .speaker-sa:hover .speaker-sa-2{
-  transform: translateX(100%);
+  transform: translateX(-100%);
 }
 
 /* Button : See More  */
