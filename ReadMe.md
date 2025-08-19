@@ -3,7 +3,11 @@
 This is an improved version of my basic webpage, showcasing more advanced CSS techniques and responsive design.
 
 ---
+## Live Demo
 
+ [Live Demo 2](https://haseeb-khan-official.github.io/MyProjectNew/) | [Repo](https://github.com/Haseeb-Khan-Official/MyProjectNew)
+
+---
 ## About this Version
 
 - Builds upon the basic version with cleaner and more efficient code.
